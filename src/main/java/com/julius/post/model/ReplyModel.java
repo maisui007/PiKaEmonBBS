@@ -6,7 +6,7 @@
 * @date 2015年8月15日 上午8:21:30 
 * @version V1.0   
 */
-package com.julius.bbs.post;
+package com.julius.post.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

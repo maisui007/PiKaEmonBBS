@@ -6,7 +6,7 @@
 * @date 2015年8月15日 上午8:17:19 
 * @version V1.0   
 */
-package com.julius.bbs.post;
+package com.julius.post.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +20,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.julius.bbs.user.UserModel;
 import com.julius.common.model.BaseModel;
+import com.julius.user.model.UserModel;
 
 /** 
 * @ClassName: PostModel

@@ -6,7 +6,7 @@
 * @date 2015年8月15日 上午8:08:04 
 * @version V1.0   
 */
-package com.julius.bbs.user;
+package com.julius.user.model;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -21,9 +21,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.julius.bbs.post.BoardModel;
-import com.julius.bbs.post.PostModel;
 import com.julius.common.model.BaseModel;
+import com.julius.post.model.BoardModel;
+import com.julius.post.model.PostModel;
 
 /** 
 * @ClassName: UserModel

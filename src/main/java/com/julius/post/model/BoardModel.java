@@ -6,7 +6,7 @@
 * @date 2015年8月15日 上午8:11:02 
 * @version V1.0   
 */
-package com.julius.bbs.post;
+package com.julius.post.model;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -19,8 +19,8 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-import com.julius.bbs.user.UserModel;
 import com.julius.common.model.BaseModel;
+import com.julius.user.model.UserModel;
 
 /** 
 * @ClassName: BoardModel 
