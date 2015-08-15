@@ -47,7 +47,7 @@ public interface BaseDao<T> {
 	 * @author julius
 	 * @date 2015年8月15日 下午1:13:16
 	 */
-	public T findById(Integer id);
+	public T findById(Class<T> clazz,Integer id);
 	
 	/**
 	 * 
