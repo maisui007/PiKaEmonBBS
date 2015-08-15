@@ -26,6 +26,11 @@ import javax.persistence.MappedSuperclass;
  */
 @MappedSuperclass
 public abstract class BaseModel implements Serializable{
+	/** 
+	* UID
+	*/ 
+	
+	private static final long serialVersionUID = -4212891870350291658L;
 	@Id
 	@Column(length=36,updatable=false)
 	private String id;//主键
