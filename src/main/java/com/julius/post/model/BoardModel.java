@@ -48,7 +48,7 @@ public class BoardModel extends BaseModel {
 	@JoinTable(name="bbs_board_user",
 	joinColumns={@JoinColumn(name="board_id")},
 	inverseJoinColumns={@JoinColumn(name="user_id")})	
-	private Set<UserModel> users = new HashSet<UserModel>();
+	private Set<UserModel> managers = new HashSet<UserModel>();
 
 	/** 
 	* @return name 
@@ -79,19 +79,17 @@ public class BoardModel extends BaseModel {
 	}
 
 	/** 
-	* @return users 
+	* @return managers 
 	*/
-	public Set<UserModel> getUsers() {
-		return users;
+	public Set<UserModel> getManagers() {
+		return managers;
 	}
 
 	/** 
-	* @param users
+	* @param managers
 	*/
-	public void setUsers(Set<UserModel> users) {
-		this.users = users;
+	public void setManagers(Set<UserModel> managers) {
+		this.managers = managers;
 	}
-	
-	
 
 }
