@@ -10,6 +10,8 @@ package com.julius.common.dao;
 
 import java.util.List;
 
+import com.julius.common.model.BaseModel;
+
 /** 
 * @ClassName: BaseDao 
 * @Description: Dao基础接口
@@ -17,7 +19,7 @@ import java.util.List;
 * @date 2015年8月15日 上午9:30:23 
 *  
 */
-public interface BaseDao<T> {
+public interface BaseDao<T extends BaseModel> {
 	/**
 	 * 
 	 * @Title: save 

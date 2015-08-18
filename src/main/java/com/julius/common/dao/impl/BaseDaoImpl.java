@@ -13,6 +13,7 @@ import java.util.List;
 import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
 
 import com.julius.common.dao.BaseDao;
+import com.julius.common.model.BaseModel;
 
 /** 
 * @ClassName: BaseDaoImpl 
@@ -21,7 +22,7 @@ import com.julius.common.dao.BaseDao;
 * @date 2015年8月15日 下午6:08:15 
 *  
 */
-public abstract class BaseDaoImpl<T> extends HibernateDaoSupport implements BaseDao<T> {
+public abstract class BaseDaoImpl<T extends BaseModel> extends HibernateDaoSupport implements BaseDao<T> {
 
 	/* 
 	* <p>Description:保存 </p> 

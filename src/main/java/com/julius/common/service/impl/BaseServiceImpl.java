@@ -11,6 +11,7 @@ package com.julius.common.service.impl;
 import java.util.List;
 
 import com.julius.common.dao.BaseDao;
+import com.julius.common.model.BaseModel;
 import com.julius.common.service.BaseService;
 
 /** 
@@ -20,9 +21,9 @@ import com.julius.common.service.BaseService;
 * @date 2015年8月15日 下午6:24:17 
 *  
 */
-public abstract class BaseServiceImpl<T> implements BaseService<T> {
+public abstract class BaseServiceImpl<T extends BaseModel,TDao extends BaseDao<T>> implements BaseService<T,TDao> {
 
-	protected BaseDao<T> dao;
+	public TDao dao;
 	
 	/*
 	* <p>Description:保存 </p> 

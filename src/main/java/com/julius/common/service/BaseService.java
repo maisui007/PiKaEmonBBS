@@ -10,6 +10,9 @@ package com.julius.common.service;
 
 import java.util.List;
 
+import com.julius.common.dao.BaseDao;
+import com.julius.common.model.BaseModel;
+
 /** 
 * @ClassName: BaseService 
 * @Description: Service基础接口
@@ -17,7 +20,7 @@ import java.util.List;
 * @date 2015年8月15日 上午9:31:16 
 *  
 */
-public interface BaseService<T> {
+public interface BaseService<T extends BaseModel,TDao extends BaseDao<T>> {
 	/**
 	 * 
 	 * @Title: save 
