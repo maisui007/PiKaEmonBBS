@@ -23,7 +23,12 @@ import com.opensymphony.xwork2.ModelDriven;
 * @date 2015年8月15日 上午9:31:58 
 *  
 */
-public abstract class BaseAction<T extends BaseModel,TService extends BaseService<T,BaseDao<T>>> extends ActionSupport implements ModelDriven<T>{
+public abstract class BaseAction<T extends BaseModel,TDao extends BaseDao<T>,TService extends BaseService<T,TDao>> extends ActionSupport implements ModelDriven<T>{
+	/**
+	 * UID
+	 */
+	private static final long serialVersionUID = 4799535087600143591L;
+
 	protected T model;
 
 	protected TService service;
