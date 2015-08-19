@@ -5,14 +5,18 @@
         
 <struts>
     <package name="main" extends="struts-default">
-       <global-results>
+       <!-- <global-results>
        	  <result name="success">/success.jsp</result>
        	  <result name="fail">/fail.jsp</result>
-       </global-results>
+       </global-results> -->
        
-       <action name="bbs/*/*/*" class="com.julius.{1}.action.{2}" method="{3}">
-          <result name="success">/WEB-INF/views/{1}/main.do</result>
+       <action name="bbs/*/*/*" class="com.julius.{1}.action.{2}Action" method="{3}">
+          <result name="success">/WEB-INF/views/{2}/main.do</result>
        </action>
+       
+      <!--  <action name="bbs/save" class="com.julius.user.action.UserAction">
+          <result name="success">/WEB-INF/views/User/main.do</result>
+       </action> -->
        
     </package>
 </struts>

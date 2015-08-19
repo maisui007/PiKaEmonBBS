@@ -53,8 +53,9 @@ public abstract class BaseAction<T extends BaseModel,TDao extends BaseDao<T>,TSe
 	 * @author julius
 	 * @date 2015年8月16日 上午10:58:46
 	 */
-	public T save(){
-		return service.save(model);
+	public String save(){
+		service.save(model);
+		return "success";
 	}
 	
 	/**
