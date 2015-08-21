@@ -12,11 +12,11 @@
  * ProjectName: PiKaEmonBBS 
  * Description: webServiceImpl测试程序
 ======================================*/
-package com.julius.webservice.impl;
+package com.julius.webservice.server.impl;
 
 import javax.jws.WebService;
 
-import com.julius.webservice.HelloWebService;
+import com.julius.webservice.server.HelloWebService;
 
 /** 
  * Description:webServiceImpl测试程序

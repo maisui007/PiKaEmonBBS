@@ -12,7 +12,7 @@
  * ProjectName: PiKaEmonBBS 
  * Description: webService测试程序
 ======================================*/
-package com.julius.webservice;
+package com.julius.webservice.server;
 
 import javax.jws.WebParam;
 import javax.jws.WebService;

@@ -16,7 +16,8 @@ package com.julius.webservice;
 
 import javax.xml.ws.Endpoint;
 
-import com.julius.webservice.impl.HelloWebServiceImpl;
+import com.julius.webservice.server.HelloWebService;
+import com.julius.webservice.server.impl.HelloWebServiceImpl;
 
 /** 
  * Description:webService启动测试
